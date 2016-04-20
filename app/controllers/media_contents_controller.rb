@@ -15,7 +15,7 @@ class MediaContentsController < ApplicationController
 
   def delete_media
     Media.where(id: params[:media_contents]).destroy_all
-    redirect_to root_url
+    redirect_to media_contents_url
   end
 
 

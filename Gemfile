@@ -25,7 +25,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'dropzonejs-rails'
+gem 'dropzonejs-rails', '~> 0.5.3'
+#gem 'dropzonejs-rails'
+
 
 gem 'carrierwave'
 gem 'cloudinary', group: :production

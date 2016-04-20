@@ -1,3 +1,19 @@
+<script>
+
+//document.getElementById("#button_new").onclick = function() {
+  // window.onload = function () 
+  function btn_new(){
+  
+  //alert("ABC");
+  
+    if (! localStorage.justOnce) {
+        localStorage.setItem("justOnce", "true");
+        window.location.reload();
+    }
+  }
+</script>
+
+<body>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -7,7 +23,7 @@
 <div class="container">
   <div class="row" style="margin-top: 50px;">
     <div class="col-lg-4 col-lg-offset-1">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Upload New</button>
+      <button type="button" onclick="btn_new()" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Upload New</button>
     </div>
   </div>
   <div class="row" style="margin-top: 25px;">
@@ -68,3 +84,4 @@
     </div>
   </div>
 </div>
+</body>

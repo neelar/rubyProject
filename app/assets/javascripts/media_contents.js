@@ -1,3 +1,4 @@
+$( window ).load(function() {
 $(function() {
   var mediaDropzone;
   mediaDropzone = new Dropzone("#media-dropzone");
@@ -21,3 +22,4 @@ var appendContent = function(imageUrl, mediaId) {
   $("#delete").removeAttr('disabled');
   $("#no-media").html("");
 };
+});
