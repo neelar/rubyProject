@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root 'media_contents#index'
+  #root 'media_contents#index'
+  
+  get 'media_contents', :to =>'media_contents#index'
+  
+  root 'welcome#index'
 
   resources :media_contents, only: [:create]
 
