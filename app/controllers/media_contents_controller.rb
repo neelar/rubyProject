@@ -4,7 +4,7 @@ class MediaContentsController < ApplicationController
     @media_contents = Media.all
   end
 
- def create
+  def create
     @media = Media.new(file_name: params[:file])
     if @media.save!
       respond_to do |format|
@@ -13,9 +13,11 @@ class MediaContentsController < ApplicationController
     end
   end
 
-def delete_media
-  Media.where(id: params[:media_contents]).destroy_all
-  redirect_to root_url
-end
+  def delete_media
+    Media.where(id: params[:media_contents]).destroy_all
+    redirect_to root_url
+  end
+
+
 
 end

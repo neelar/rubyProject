@@ -18,6 +18,7 @@
           <div class="row">
             <div class="col-lg-6">
               <%= submit_tag "Delete", id: "delete", class: "btn btn-danger", disabled: @media_contents.empty? %>
+            
             </div>
           </div>
           <br>
@@ -29,7 +30,7 @@
                 <% @media_contents.each do |media| %>
                   <div class="col-lg-4">
                     <div class="thumbnail">
-                      <%= image_tag media.file_name.url %>
+                      <%= image_tag media.file_name.url  %>
                       <div class="caption">
                         <p>
                           <%= check_box_tag "media_contents[]", media.id %>
