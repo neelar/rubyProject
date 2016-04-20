@@ -1,3 +1,4 @@
+//= require dropzone
 $(function() {
   var mediaDropzone;
   mediaDropzone = new Dropzone("#media-dropzone");
