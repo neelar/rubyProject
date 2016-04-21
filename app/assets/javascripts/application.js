@@ -15,5 +15,5 @@
 //= require turbolinks
 //= require dropzone
 //= require bootstrap
-//= require bootstrap-sprockets
+
 //= require_tree .
