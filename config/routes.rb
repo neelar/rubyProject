@@ -16,6 +16,12 @@ Rails.application.routes.draw do
 
   delete 'delete_media', to: "media_contents#delete_media"
 
+
+namespace :api, defaults: { format: 'json' } do
+ resources :media_contents
+end
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
