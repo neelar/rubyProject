@@ -28,7 +28,7 @@ gem 'spring',        group: :development
 gem 'dropzonejs-rails'
 
 gem 'carrierwave'
-gem 'cloudinary', group: :production
+#gem 'cloudinary', group: :production
 
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
