@@ -179,7 +179,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  bootstrap-sass (~> 3.3.5)
+  bootstrap-sass
   carrierwave
   cloudinary
   coffee-rails (~> 4.1.0)

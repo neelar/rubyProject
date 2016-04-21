@@ -30,7 +30,7 @@ gem 'dropzonejs-rails'
 gem 'carrierwave'
 gem 'cloudinary', group: :production
 
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'devise'
 
