@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'ruby'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.5'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -35,8 +35,20 @@ gem 'autoprefixer-rails'
 gem 'devise'
 gem 'devise-bootstrap-views'
 
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'pry'
+end
+
+
 group :development do
-  gem 'sqlite3'
+  #gem 'sqlite3'
+    gem 'web-console', '~> 2.0'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
 end
 
 group :production do
