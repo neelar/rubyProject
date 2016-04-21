@@ -33,6 +33,7 @@ gem 'cloudinary', group: :production
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'devise'
+gem 'devise-bootstrap-views'
 
 group :development do
   gem 'sqlite3'
